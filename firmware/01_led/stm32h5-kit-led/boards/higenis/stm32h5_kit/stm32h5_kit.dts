@@ -24,22 +24,6 @@
 		zephyr,sram = &sram1;
 	};
 
-	leds {
-		compatible = "gpio-leds";
-
-		led0: led_0 {
-			gpios = <&gpiof 12 GPIO_ACTIVE_HIGH>;
-		};
-
-		led1: led_1 {
-			gpios = <&gpiod 13 GPIO_ACTIVE_HIGH>;
-		};
-    
-		led2: led_2 {
-			gpios = <&gpiod 14 GPIO_ACTIVE_HIGH>;
-		};    
-	};
-
 };
 
 &clk_hse {
