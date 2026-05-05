@@ -6,13 +6,13 @@
     {
       "label": "rebuild",
       "type": "shell",
-      "command": "source ~/hdd/develop/zephyr/.venv/bin/activate; export ZEPHYR_BASE=~/hdd/develop/zephyr/zephyr_4.3.0/zephyr; west build -p -b stm32h5_kit -- -DBOARD_ROOT=.",
+      "command": "source $ZEPHYR_HOME/zephyr-4.4.0/.venv/bin/activate; export ZEPHYR_BASE=$ZEPHYR_HOME/zephyr-4.4.0/zephyr/zephyr; west build -p -b stm32h5_kit -- -DBOARD_ROOT=.",
       "problemMatcher": [],
     },
     {
       "label": "build",
       "type": "shell",
-      "command": "source ~/hdd/develop/zephyr/.venv/bin/activate; export ZEPHYR_BASE=~/hdd/develop/zephyr/zephyr_4.3.0/zephyr; west build -b stm32h5_kit -- -DBOARD_ROOT=.",
+      "command": "source $ZEPHYR_HOME/zephyr-4.4.0/.venv/bin/activate; export ZEPHYR_BASE=$ZEPHYR_HOME/zephyr-4.4.0/zephyr/zephyr; west build -b stm32h5_kit -- -DBOARD_ROOT=.",
       "problemMatcher": [],
       "group": {
         "kind": "build",
